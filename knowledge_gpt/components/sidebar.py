@@ -60,5 +60,3 @@ def sidebar():
 
         st.session_state["OPENAI_API_KEY"] = api_key_input
 
-        #faq()
-
