@@ -26,8 +26,8 @@ MODEL_LIST = ["gpt-3.5-turbo", "gpt-4"]
 # Uncomment to enable debug mode
 # MODEL_LIST.insert(0, "debug")
 
-st.set_page_config(page_title="KnowledgeGPT", page_icon="📖", layout="wide")
-st.header("📖KnowledgeGPT")
+st.set_page_config(page_title="DAAS", page_icon="📖", layout="wide")
+st.header("📖Documentation as a service")
 
 # Enable caching for expensive functions
 bootstrap_caching()
@@ -44,13 +44,13 @@ if not openai_api_key:
     )
 
 
-uploaded_file = st.file_uploader(
-    "Upload a pdf, docx, or txt file",
-    type=["pdf", "docx", "txt"],
-    help="Scanned documents are not supported yet!",
-)
+# uploaded_file = st.file_uploader(
+#     "Upload a pdf, docx, or txt file",
+#     type=["pdf", "docx", "txt"],
+#     help="Scanned documents are not supported yet!",
+# )
 
-model: str = st.selectbox("Model", options=MODEL_LIST)  # type: ignore
+#model: str = st.selectbox("Model", options=MODEL_LIST)  # type: ignore
 
 with st.expander("Advanced Options"):
     return_all_chunks = st.checkbox("Show all chunks retrieved from vector search")
