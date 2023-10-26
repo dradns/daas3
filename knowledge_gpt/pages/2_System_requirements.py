@@ -2,6 +2,9 @@ import streamlit as st
 import anthropic
 from knowledge_gpt.components.sidebar import sidebar
 
+from st_pages import Page, show_pages, Section, add_page_title
+add_page_title()
+
 # with st.sidebar:
 #     anthropic_api_key = st.text_input("Anthropic API Key", key="file_qa_api_key", type="password")
 #     "[View the source code](https://github.com/streamlit/llm-examples/blob/main/pages/1_File_Q%26A.py)"
