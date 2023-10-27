@@ -41,9 +41,11 @@ bootstrap_caching()
 sidebar()
 
 api_key = st.session_state.get("API_KEY")
-st.session_state["API_KEY"] = 'r8_5dXks0XSi27sUU4zxiCeKiYOB1wvfil3UZOxV'
+#st.session_state["API_KEY"] = 'r8_5dXks0XSi27sUU4zxiCeKiYOB1wvfil3UZOxV'
 replicate_api = st.session_state.get("API_KEY")
 os.environ['REPLICATE_API_TOKEN'] = replicate_api
+print('API KEY')
+print(st.session_state.get("API_KEY"))
 
 # Store LLM generated responses
 if "messages" not in st.session_state.keys():
@@ -73,3 +75,5 @@ if st.session_state.messages[-1]["role"] != "assistant":
             placeholder.markdown(full_response)
     message = {"role": "assistant", "content": full_response}
     st.session_state.messages.append(message)
+
+print(st.session_state.get("API_KEY"))

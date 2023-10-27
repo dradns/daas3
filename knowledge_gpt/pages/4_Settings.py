@@ -21,8 +21,7 @@ if not api_key:
 api_key_input = st.text_input(
             "API Key",
             type="password",
-            placeholder="Paste your API key here ",
-            help="You can get your API key from https://platform.openai.com/account/api-keys.",  # noqa: E501
+            placeholder="Paste your API key here ",  # noqa: E501
             value=os.environ.get("API_KEY", None)
             or st.session_state.get("API_KEY", ""),
         )
