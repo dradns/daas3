@@ -1,0 +1,5 @@
+curl https://api-inference.huggingface.co/models/gpt2 \
+	-X POST \
+	-d '{"inputs": "Can you please let us know more details about your "}' \
+	-H 'Content-Type: application/json' \
+	-H "Authorization: Bearer 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"
