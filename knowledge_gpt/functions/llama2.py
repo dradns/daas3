@@ -20,7 +20,6 @@ def model_response(prompt_input):
     return response2(string_dialogue, prompt_input)
 
 endpoint_url = "https://api-inference.huggingface.co/models/meta-llama/Llama-2-7b-chat-hf"
-
 hf_token = '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'
 
 client = InferenceClient(endpoint_url, token=hf_token)
@@ -43,6 +42,6 @@ def response2(string_dialogue, prompt_input):
     #                               "temperature": 0.01, "top_p": 0.1, "max_length": 120,
     #                               "repetition_penalty": 1})
     #return output
-    print(hf_token)
+    #print(hf_token)
     prompt = f"{string_dialogue} {prompt_input} Assistant: "
     return client.text_generation(prompt, **gen_kwargs)

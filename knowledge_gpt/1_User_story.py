@@ -17,6 +17,7 @@ show_pages(
         Page("pages/2_System_requirements.py", "Use cases Chat_test", "🏠"),
         Section("Acceptance criteria", icon="✔️️"),
         Page("pages/3_Acceptance_criteria.py", "Use cases Chat_test", "🏠"),
+        Page("pages/5_Mermaid_test.py", "Mermaid", "🏠"),
         Section("Settings", icon="✔️️"),
         Page("pages/4_Settings.py", "Settings", "🏠"),
 
