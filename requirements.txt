@@ -145,3 +145,4 @@ tqdm~=4.66.1
 msgpack~=1.0.7
 anthropic~=0.5.0
 replicate
+-e git+https://github.com/dradns/daas3@56c6c16c5a02b1e22841504d2cdd21a4828246b3#egg=knowledge_gpt

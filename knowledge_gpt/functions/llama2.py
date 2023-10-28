@@ -19,7 +19,8 @@ def model_response(prompt_input):
     #print('--------------')
     return response2(string_dialogue, prompt_input)
 
-endpoint_url = "https://api-inference.huggingface.co/models/meta-llama/Llama-2-70b-chat-hf"
+endpoint_url = "https://api-inference.huggingface.co/models/meta-llama/Llama-2-7b-chat-hf"
+
 hf_token = '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'
 
 client = InferenceClient(endpoint_url, token=hf_token)
